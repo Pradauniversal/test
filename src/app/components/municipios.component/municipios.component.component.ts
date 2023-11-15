@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { DatosService } from './../../datosServices/datos.service.service';
 
 import { Component, OnInit, Input } from '@angular/core';
@@ -5,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-municipio',
   templateUrl: './municipios.component.component.html',
-  styleUrl: './municipios.component.component.css'
+  styleUrl: './municipios.component.component.css',
+  imports:[CommonModule],
+  standalone:true
 })
 export class MunicipioComponent implements OnInit {
   @Input() selectedDepartamento: string = '';
