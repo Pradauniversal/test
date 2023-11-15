@@ -1,0 +1,12 @@
+<p>departamento.component works!</p>
+
+
+<div>
+    <label for="departamento">Seleccione Departamento:</label>
+    <select id="departamento" [(ngModel)="selectedDepartamento" (change)="filterByDepartamento()">
+      <option value="">Todos</option>
+      <option *ngFor="let departamento of departamentos" [value]="departamento.departamento">
+        {{ departamento.departamento }}
+      </option>
+    </select>
+</div>

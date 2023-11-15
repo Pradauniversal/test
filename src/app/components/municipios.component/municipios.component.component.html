@@ -1,0 +1,43 @@
+<p>municipios.component works!</p>
+
+<!-- 
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Departamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let municipio of municipios | filter:filtroDepartamento">
+            <td>{{municipio.nombre}}</td>
+            <td>{{municipio.departamento}}</td>
+        </tr> -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Departamento</th>
+            <th>Municipio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let municipio of municipios | filter :filtroDepartamento">
+            <td>{{ municipio.departamento }}</td>
+            <td>{{ municipio.municipio }}</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr>
+            <th>Departamento</th>
+            <th>Municipio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let municipio of municipios">
+            <td>{{ municipio.departamento }}</td>
+            <td>{{ municipio.municipio }}</td>
+        </tr>
+    </tbody>
+</table>
